@@ -13,7 +13,7 @@ export const Header = () => {
           <p className="hover:text-mainBlue">Kontaktlar</p>
         </div>
         <div className="flex items-center space-x-4 absolute right-6">
-          <p className="hover:text-mainBlue">O'z</p>
+          <p className="hover:text-mainBlue">O&apos;z</p>
           <p className="hover:text-mainBlue">Ru</p>
         </div>
       </div>
