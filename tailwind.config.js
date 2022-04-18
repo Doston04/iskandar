@@ -13,10 +13,12 @@ module.exports = {
       },
       colors: {
         "ghost": "#f8f8ff",
-      },
-      fontFamily: {
-        "inter": ["Inter", "sans-serif"],
-      } 
+        "mainBlue": "#1167b1",
+        "secondaryBlue": "#2a9df4",
+        "bgBlue": "#03254c",
+        "lightBlue": "#88c7dc",
+        "normBlue": "#4da4ea",
+      }
     },
   },
   plugins: [],

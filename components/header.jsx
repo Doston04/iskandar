@@ -1,26 +1,22 @@
-import Link from "next/link"
+// import Link from "next/link"
 
 export const Header = () => {
   return (
-    <header className="z-30">
-      <div id="headerInner" className="max-w-7xl mx-auto px-6 flex items-center justify-center relative h-10">
-        <div id="logo" className="absolute left-6">
-          <Link className="text-2xl" href="/">
-            <a>The Coffee</a>
-          </Link>  
+    <header>
+      <div id="headerInner" className="max-w-[1440px] mx-auto px-6 py-2 flex items-center justify-center text-black relative mt-4 bg-white">
+        <span className="absolute left-6">Some Logo</span>
+        <div className="flex items-center space-x-6">
+          <p className="hover:text-mainBlue">Bosh Sahifa</p>
+          <p className="hover:text-mainBlue">Biz Haqimizda</p>
+          <p className="hover:text-mainBlue">Xizmatlar</p>
+          <p className="hover:text-mainBlue">Blog</p>
+          <p className="hover:text-mainBlue">Kontaktlar</p>
         </div>
-        <nav className="flex items-center space-x-8 text-[14px]">
-          <Link href="/">
-            <a className="hover:text-stone-400 transition duration-200">Главная</a>  
-          </Link>
-          <Link href="/">
-            <a className="hover:text-stone-400 transition duration-200">Меню</a>  
-          </Link>
-          <Link href="/">
-            <a className="hover:text-stone-400 transition duration-200">О нас</a>  
-          </Link>  
-        </nav>
-      </div>  
-    </header>  
+        <div className="flex items-center space-x-4 absolute right-6">
+          <p className="hover:text-mainBlue">O'z</p>
+          <p className="hover:text-mainBlue">Ru</p>
+        </div>
+      </div>
+    </header>
   )  
 }

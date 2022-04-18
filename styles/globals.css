@@ -6,4 +6,18 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Google", sans-serif;
+}
+
+@font-face {
+  font-family: "Google";
+  src: url(../fonts/Product\ Sans\ Regular.ttf);
+}
+
+:root {
+  --main-blue: #2a9df4;
+}
+
+#headerInner {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
