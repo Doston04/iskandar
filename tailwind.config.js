@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+       aspectRatio: {
+        '4/3': '4 / 3',
+      },
       screens: {
         "sm": "440px",
         "md": "768px",
@@ -18,6 +21,9 @@ module.exports = {
         "bgBlue": "#03254c",
         "lightBlue": "#88c7dc",
         "normBlue": "#4da4ea",
+      },
+      fontFamily: {
+        "openSans": ["Open Sans", "sans-serif"],
       }
     },
   },
