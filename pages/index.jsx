@@ -25,9 +25,9 @@ export default function Home() {
             <div className='flex-auto flex items-center justify-center'>
               <div className='max-w-[1200px] mx-auto w-full px-6 py-4 xl:grid grid-cols-2 items-center gap-20 hidden'>
                 <div className='w-full flex flex-col space-y-6 items-start'>
-                  <p className='uppercase font-bold text-[64px] leading-[72px]'>Yuqori sifatli va Og'riqsiz - <span className='text-mainBlue'>stomatologiya</span></p>
-                  <p className='opacity-70 text-[20px]'>Biz xizmatlarning to'liq spektrini va har qanday muammolarni hal qilish uchun kompleks yondashuvni taklif qilamiz va bu barcha oila a'zolari uchun sog'lom tishlar va og'iz bo'shlig'ining kafolatidir.</p>
-                  <button className='bg-mainBlue text-white px-8 py-4 rounded hover:bg-opacity-90 border-none'>Qabumda yozilish</button>
+                  <p className='uppercase font-bold text-[64px] leading-[72px]'>Yuqori sifatli va Og&apos;riqsiz - <span className='text-mainBlue'>stomatologiya</span></p>
+                  <p className='opacity-70 text-[20px]'>Biz xizmatlarning to&apos;liq spektrini va har qanday muammolarni hal qilish uchun kompleks yondashuvni taklif qilamiz va bu barcha oila a&apos;zolari uchun sog&apos;lom tishlar va og&apos;iz bo&apos;shlig&apos;ining kafolatidir.</p>
+                  <button className='bg-mainBlue text-white px-8 py-4 rounded hover:bg-opacity-90 border-none'>Qabulga yozilish</button>
                 </div>
                 <div className='w-full h-full border border-black grid grid-cols-2 gap-4'>
                   <div className='border border-red-500 w-full gridMin gap-4'>
