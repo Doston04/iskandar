@@ -15,12 +15,10 @@ module.exports = {
         "xl": "1280px"
       },
       colors: {
-        "ghost": "#f8f8ff",
-        "mainBlue": "#1167b1",
-        "secondaryBlue": "#2a9df4",
-        "bgBlue": "#03254c",
-        "lightBlue": "#88c7dc",
-        "normBlue": "#4da4ea",
+        "mainGray": "#eeeeee",
+        "mainBlue": "#1663be",
+        "textGray": "#101010",
+        "lightBlue": "#59bfff"
       },
       fontFamily: {
         "openSans": ["Open Sans", "sans-serif"],
