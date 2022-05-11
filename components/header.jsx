@@ -26,13 +26,13 @@ export const Header = () => {
           <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Bosh Sahifa</a>
           </Link>
-          <Link href="/about">
+          <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Biz Haqimizda</a>
           </Link>
-          <Link href="/features">
+          <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Xizmatlar</a>
           </Link>
-          <Link href="/contacts">
+          <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Kontaktlar</a>
           </Link>
         </div>
@@ -40,7 +40,7 @@ export const Header = () => {
           <Link href="/">
             <a className="hover:text-mainBlue">O&apos;z</a>
           </Link>
-          <Link href="/ru/">
+          <Link href="/">
             <a className="hover:text-mainBlue">Pу</a>
           </Link>
         </div>
@@ -61,13 +61,13 @@ const MobileMenu = ({setIsMobileMenu}) => {
         <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Bosh Sahifa</a>
           </Link>
-          <Link href="/about">
+          <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Biz Haqimizda</a>
           </Link>
-          <Link href="/features">
+          <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Xizmatlar</a>
           </Link>
-          <Link href="/contacts">
+          <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Kontaktlar</a>
           </Link>
       </div>    
