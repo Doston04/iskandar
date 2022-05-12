@@ -46,7 +46,8 @@
 }
 
 :root {
-  --main-blue: #2a9df4;
+  --main-blue: #1663be;
+  --teal: #00E4E4;
 }
 
 #toTop {
@@ -55,11 +56,11 @@
 
 header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: transition 0.6s ease;
 }
 
 #mobileMenu {
   animation: mobileMenu 0.6s 1 ease-out;
-  animation: transition 0.6s ease;
 }
 
 .animationReverse {
@@ -67,7 +68,11 @@ header {
 }
 
 .teal {
-  color: #00E4E4;
+  color: var(--teal);
+}
+
+.bg-teal {
+  background-color: var(--teal);
 }
 
 .title {
@@ -101,12 +106,13 @@ header {
 }
 
 .read-more {
+  color: var(--main-blue);
+  transition: all 400ms;
   font-weight: 600;
 }
 
-.whiteDiv {
-  border-radius: 0 15px 15px 0;
-  max-width: 95%;
+.read-more:hover {
+  color: #253DA1;
 }
 
 .featureCard {
@@ -157,24 +163,47 @@ header {
   font-size: 32px;
 }
 
+.buttonBlue {
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--main-blue);
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.buttonBlue:hover {
+  background-color: #253DA1;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  gap: 24px;
+}
+
+.aboutGrid__Top {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.topDiv {
+  border-radius: 50% 0 50% 0;
+  overflow: hidden;
+}
+
+.bottomDiv {
+  border-radius: 0 30% 0 30%;
+  overflow: hidden;
+}
+
 @media (max-width: 440px) {
   .title {
     font-size: 16px;
   }
-  .subtitle {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 28px;
-    text-align: center;
-  }
   .mapContentTitle {
-    text-align: center;
-  }
-}
-
-@media (max-width: 535px) {
-  .subtitle {
-    line-height: 40px;
     text-align: center;
   }
 }
@@ -184,5 +213,15 @@ header {
     max-width: 100%;
     width: 100%;
     border-radius: 0;
+  }
+  .aboutGrid {
+    display: none;
+  }
+  .subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }

@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <header>
       <div id="headerInner" className="max-w-[1200px] mx-auto px-4 h-[60px] flex items-center justify-center text-textGray relative">
-        <span onClick={mobileMenuOpen} className="absolute left-6 block md:hidden">{hamburgerIcon}</span>
+        <span onClick={mobileMenuOpen} className="absolute left-6 block md:hidden z-30">{hamburgerIcon}</span>
         <Link href="/">
           <a className="z-40 md:absolute md:left-6 h-full py-2">
             <div className="relative w-[200px] h-full md:-ml-[30%]">
