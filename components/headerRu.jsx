@@ -4,7 +4,7 @@ import { hamburgerIcon, xBtn } from "./icons"
 import Image from "next/image"
 import logo from "../public/media/logo-black.png"
 
-export const Header = () => {
+export const HeaderRu = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(false)
   
   function mobileMenuOpen() {
@@ -24,33 +24,33 @@ export const Header = () => {
         </Link>
         <div className="md:flex items-center space-x-6 hidden">
           <Link href="/">
-            <a className="hover:text-mainBlue transition duration-300">Bosh Sahifa</a>
+            <a className="hover:text-mainBlue transition duration-300">Главная</a>
           </Link>
           <Link href="/">
-            <a className="hover:text-mainBlue transition duration-300">Biz Haqimizda</a>
+            <a className="hover:text-mainBlue transition duration-300">О нас</a>
           </Link>
           <Link href="/">
-            <a className="hover:text-mainBlue transition duration-300">Xizmatlar</a>
+            <a className="hover:text-mainBlue transition duration-300">Услуги</a>
           </Link>
           <Link href="/">
-            <a className="hover:text-mainBlue transition duration-300">Kontaktlar</a>
+            <a className="hover:text-mainBlue transition duration-300">Контакты</a>
           </Link>
         </div>
         <div className="md:flex hidden items-center space-x-4 absolute right-6">
           <Link href="/">
-            <a className="hover:text-mainBlue text-mainBlue">O&apos;z</a>
+            <a className="hover:text-mainBlue transition duration-300">O&apos;z</a>
           </Link>
-          <Link href="/indexRu">
-            <a className="hover:text-mainBlue transition duration-300">Pу</a>
+          <Link href="/">
+            <a className="hover:text-mainBlue text-mainBlue">Pу</a>
           </Link>
         </div>
       </div>
-      {isMobileMenu && <MobileMenu setIsMobileMenu={setIsMobileMenu} />}
+      {isMobileMenu && <MobileMenuRu setIsMobileMenu={setIsMobileMenu} />}
     </header>
   )  
 }
 
-const MobileMenu = ({setIsMobileMenu}) => {
+const MobileMenuRu = ({setIsMobileMenu}) => {
   function closeMobileMenu() {
     setIsMobileMenu(false)
   }
@@ -59,23 +59,23 @@ const MobileMenu = ({setIsMobileMenu}) => {
       <span onClick={closeMobileMenu} className="absolute top-[20px] left-6">{xBtn}</span>
       <div className="flex flex-col justify-center items-center space-y-4">
         <Link href="/">
-            <a className="hover:text-mainBlue transition duration-300">Bosh Sahifa</a>
+            <a className="hover:text-mainBlue transition duration-300">Главная</a>
           </Link>
           <Link href="/">
-            <a className="hover:text-mainBlue transition duration-300">Biz Haqimizda</a>
+            <a className="hover:text-mainBlue transition duration-300">О нас</a>
           </Link>
           <Link href="/">
-            <a className="hover:text-mainBlue transition duration-300">Xizmatlar</a>
+            <a className="hover:text-mainBlue transition duration-300">Услуги</a>
           </Link>
           <Link href="/">
-            <a className="hover:text-mainBlue transition duration-300">Kontaktlar</a>
+            <a className="hover:text-mainBlue transition duration-300">Контакты</a>
           </Link>
           <div className="absolute bottom-4 flex items-center">
             <Link href="/">
-              <a className="hover:text-mainBlue text-mainBlue border-r border-textGray pr-2">O&apos;z</a>
+              <a className="hover:text-mainBlue border-r border-textGray pr-2">O&apos;z</a>
             </Link>
             <Link href="/indexRu">
-              <a className="hover:text-mainBlue transition duration-300 pl-2">Pу</a>
+              <a className="hover:text-mainBlue text-mainBlue transition duration-300 pl-2">Pу</a>
             </Link>
           </div>
       </div>    
