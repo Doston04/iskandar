@@ -37,20 +37,27 @@ export const Header = (props) => {
           </Link>
         </div>
       </div>
-      {isMobileMenu && <MobileMenu setIsMobileMenu={setIsMobileMenu} />}
+      {isMobileMenu && <MobileMenu setIsMobileMenu={setIsMobileMenu} onRefClick={onRefClick(ref)} />}
     </header>
   )  
 }
 
-const MobileMenu = ({setIsMobileMenu}) => {
+const MobileMenu = ({setIsMobileMenu}, props, onRefClick) => {
   function closeMobileMenu() {
     setIsMobileMenu(false)
+  }
+  function onRefClick(ref) {
+    ref.current.scrollIntoView({ behavior: "smooth"})
   }
   return (
     <div id="mobileMenu" className="fixed inset-0 bg-white z-40 md:hidden flex justify-center items-center">
       <span onClick={closeMobileMenu} className="absolute top-[20px] left-6">{xBtn}</span>
       <div className="flex flex-col justify-center items-center space-y-4">
-        <Link href="/">
+          {/* <button onClick={()=>{
+            closeMobileMenu()
+
+          }}>Asosiy</button> */}
+          <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Asosiy</a>
           </Link>
           <Link href="/">

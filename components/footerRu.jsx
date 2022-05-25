@@ -1,6 +1,7 @@
 import { emailLogo, instaLogo, phoneSVG, telegramLogo } from "./icons"
 import logo from "../public/media/logo-black.png"
 import Image from "next/dist/client/image"
+import Link from 'next/dist/client/link'
 
 export const FooterRu = () => {
   const currentYear = new Date().getFullYear() 
@@ -15,9 +16,15 @@ export const FooterRu = () => {
             </div>
           </div>
           <div className="cursor-pointer flex items-center space-x-6">
-            <div className="hover:text-mainBlue transition duration-300">{telegramLogo}</div>
-            <div className="hover:text-mainBlue transition duration-300">{instaLogo}</div>
-            <div className="hover:text-mainBlue transition duration-300">{emailLogo}</div>
+            <Link href="https://telegram.me/bobir_nazarov"> 
+              <a className="hover:text-mainBlue transition duration-300">{telegramLogo}</a>
+            </Link>
+            <Link href="https://instagram.com/soft_dentalclinic?igshid=YmMyMTA2M2Y="> 
+              <a className="hover:text-mainBlue transition duration-300">{instaLogo}</a>
+            </Link>
+            <Link href="mailto:bobir.nazarov00@gmail.com"> 
+              <a className="hover:text-mainBlue transition duration-300">{emailLogo}</a>
+            </Link>
           </div>
           <div className="hover:text-mainBlue transition duration-300 md:absolute md:right-6"><a className="flex items-center googleFont" href="tel:+998997950059"><span className="mr-2">{phoneSVG}</span> +998 99 795 00 59</a></div>
         </div>

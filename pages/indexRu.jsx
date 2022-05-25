@@ -47,7 +47,7 @@ export default function Home() {
                   <p className='title teal'>Главная</p>
                   <p className='uppercase font-bold text-[22px] leading-[30px] md:text-[32px] md:leading-[38px] lg:text-[44px] lg:leading-[48px] text-center md:text-left'>Качественная и безболезненная - <span className='text-mainBlue'>стоматология</span></p>
                   <p className='opacity-60 text-center md:text-left'>Мы предлагаем полный спектр услуг и комплексный подход к решению любых задач, а это гарантия здоровых зубов и полости рта для всех членов семьи.</p>
-                  <button className='buttonBlue'>Записаться на прием</button>
+                  <button onClick={()=> onRefClick(contactsRef)} className='buttonBlue'>Записаться на прием</button>
                 </div>
                 <div className='w-full h-full gridjon gap-[24px]'>
                   <div className='w-full gridMin gap-[24px]'>
@@ -61,11 +61,11 @@ export default function Home() {
                       </div>
                     </div>
                     <div className='a2 h-[200px] sm:h-[240px] md:h-[180px] lg:h-[160px] relative'>
-                      <Image src={img4} layout='fill' objectFit='cover' />
+                      <Image alt="image" src={img4} layout='fill' objectFit='cover' />
                     </div>
                   </div>
                   <div className='w-full a1 relative'>
-                    <Image src={newImg2} layout='fill' objectFit='cover' />
+                    <Image alt="image" src={newImg2} layout='fill' objectFit='cover' />
                   </div>
                 </div>
               </div>
@@ -185,8 +185,8 @@ export default function Home() {
                           <div className='bg-lightBlue w-8 h-8 rounded-full flex justify-center items-center'>{emailLogo2}</div>
                         </div>
                         <div className='flex-auto'>
-                          <Link href="mailto:avazovjr@gmail.com">
-                            <a className="contactsInfo">avazovjr@gmail.com</a>
+                          <Link href="mailto:bobir.nazarov00@gmail.com">
+                            <a className="contactsInfo">bobir.nazarov00@gmail.com</a>
                           </Link>
                         </div>
                       </div>
