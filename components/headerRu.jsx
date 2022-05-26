@@ -50,7 +50,7 @@ const MobileMenuRu = ({setIsMobileMenu}, props) => {
     <div id="mobileMenu" className="fixed inset-0 bg-white z-40 md:hidden flex flex-col space-y-4 justify-center items-center">
       <span onClick={closeMobileMenu} className="absolute top-[20px] left-6">{xBtn}</span>
       <div className="flex flex-col justify-center items-center space-y-4">
-        <Link href="/">
+          {/* <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Главная</a>
           </Link>
           <Link href="/">
@@ -61,7 +61,7 @@ const MobileMenuRu = ({setIsMobileMenu}, props) => {
           </Link>
           <Link href="/">
             <a className="hover:text-mainBlue transition duration-300">Контакты</a>
-          </Link>
+          </Link> */}
           <div className="absolute bottom-4 flex items-center">
             <Link href="/">
               <a className="hover:text-mainBlue transition duration-300 border-r border-textGray pr-2">O&apos;z</a>

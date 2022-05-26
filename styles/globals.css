@@ -131,7 +131,7 @@ header {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   border-radius: 20% 0 20% 0;
   overflow: hidden;
-  display: block;
+  height: 100%;
 }
 
 .a2 {
@@ -234,7 +234,7 @@ header {
     grid-template-columns: 1fr;
   }
   .a1 {
-    /* display: none; */
+    height: 200px;
   }
 }
 
