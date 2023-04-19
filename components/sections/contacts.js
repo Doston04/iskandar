@@ -11,6 +11,8 @@ export function ContactsSection({ contactsRef }) {
       <div className="md:h-screen flex flex-col space-y-8 md:space-y-0 md:flex-row justify-center items-center relative overflow-hidden">
         <div className="relative w-full h-[280px] sm:h-[380px] md:h-full">
           <iframe
+            title="map"
+            name="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.8187624379536!2d69.19298099587215!3d41.296424173092824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bd638477053%3A0x257a279a0e8f4348!2zNzVXVitXRmdsINCi0L7RiNC60LXQvdGCIDEwMDE3MywgT2B6YmVraXN0b24!5e0!3m2!1suz!2s!4v1652272449475!5m2!1suz!2s"
             className="absolute top-0 left-0 w-full h-full"
             allowFullScreen=""

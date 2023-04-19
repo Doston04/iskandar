@@ -55,7 +55,7 @@ export function ServicesSection({ servicesRef }) {
                   {icon1}
                 </div>
                 <div className="flex flex-col space-y-4">
-                  <h5 className="featureTitle">{service.title}</h5>
+                  <p className="featureTitle">{service.title}</p>
                   <p className="featureContent">{service.text}</p>
                 </div>
               </div>
