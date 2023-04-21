@@ -41,22 +41,14 @@ export function ContactsSection({ contactsRef }) {
                       {phoneSVG}
                     </div>
                   </div>
-                  <div className="flex-auto">
-                    <a href={`tel: ${info.number}`} className="contactsInfo">
-                      {info.number}
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-4" id="email">
-                  <div className="w-8">
-                    <div className="bg-lightBlue w-8 h-8 rounded-full flex justify-center items-center">
-                      {emailLogo2}
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <Link href={`mailto: ${info.email}`}>
-                      <a className="contactsInfo">{info.email}</a>
-                    </Link>
+                  <div className="flex-auto flex flex-col gap-[8px]">
+                    {info.numbers.map((number) => {
+                      return (
+                        <a href={`tel: ${number}`} className="contactsInfo">
+                          {number}
+                        </a>
+                      );
+                    })}
                   </div>
                 </div>
               </div>

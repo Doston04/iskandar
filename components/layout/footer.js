@@ -42,13 +42,14 @@ export const Footer = () => {
               {emailLogo}
             </a>
           </div>
-          <div className="hover:text-mainBlue transition duration-300 md:absolute md:right-6">
-            <a
-              className="flex items-center googleFont"
-              href={`tel: ${info.number}`}
-            >
-              <span className="mr-2">{phoneSVG}</span> {info.number}
-            </a>
+          <div className="md:absolute md:right-6">
+            {info.numbers.map((number) => {
+              return (
+                <a href={`tel: ${number}`} className="contactsInfo">
+                  {number}
+                </a>
+              );
+            })}
           </div>
         </div>
         <div className="flex items-center justify-center pb-4">
