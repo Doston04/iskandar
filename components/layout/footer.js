@@ -43,9 +43,9 @@ export const Footer = () => {
             </a>
           </div>
           <div className="md:absolute md:right-6">
-            {info.numbers.map((number) => {
+            {info.numbers.map((number, i) => {
               return (
-                <a href={`tel: ${number}`} className="contactsInfo">
+                <a key={i} href={`tel: ${number}`} className="contactsInfo">
                   {number}
                 </a>
               );

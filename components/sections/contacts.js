@@ -42,9 +42,13 @@ export function ContactsSection({ contactsRef }) {
                     </div>
                   </div>
                   <div className="flex-auto flex flex-col gap-[8px]">
-                    {info.numbers.map((number) => {
+                    {info.numbers.map((number, i) => {
                       return (
-                        <a href={`tel: ${number}`} className="contactsInfo">
+                        <a
+                          key={i}
+                          href={`tel: ${number}`}
+                          className="contactsInfo"
+                        >
                           {number}
                         </a>
                       );
